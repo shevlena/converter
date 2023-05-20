@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+    <link rel="stylesheet" href="./styles.css">
+   
+</head>
+
+<body>
+    <h2>Конвертер валют</h2>
+    <div class="wrapper">
+        <div class="form_converter">
+            <h4>Сума</h4>
+
+            <input class="currence_amount" placeholder="0.00" type="number">
+            <select name="converter_currency" class="converter_currency" onchange="exchangeCurrency()">
+                <option class="item" value='option'>Оберіть валюту</option>
+                <option class="item" value="UAH">UAH</option>
+                <option class="item" value="USD">USD</option>
+                <option class="item" value="EUR">EUR</option>
+                <option class="item" value="PLN">PLN</option>
+            </select>
+
+        </div>
+
+        <div id="form_converter_result" class="item_result" style="height: 150%;">
+            <div class="UAH currency" style="display: none;">
+                <span class="UAH_exchange box">0.00</span>
+                <span class="description">UAH</span>
+                <span class="UAH_rate box">0.00</span>
+            </div>
+            <div class="USD currency">
+                <span class="USD_exchange box">0.00</span>
+                <span class="description">USD</span>
+                <span class="USD_rate box">0.00</span>
+            </div>
+            <div class="EUR currency">
+                <span class="EUR_exchange box">0.00</span>
+                <span class="description">EUR</span>
+                <span class="EUR_rate box">0.00</span>
+            </div>
+            <div class="PLN currency">
+                <span class="PLN_exchange box">0.00</span>
+                <span class="description">PLN</span>
+                <span class="PLN_rate box">0.00</span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
